@@ -518,6 +518,10 @@ hr {
 .p-31 {
   padding: 0 31px !important; }
 
+/*================ Custom Width ===================*/
+.w-15 {
+  width: 15%; }
+
 /*======= Some Commen Styling ======*/
 button:focus {
   outline: none;
@@ -577,7 +581,6 @@ Home Section Styling
 =================================*/
 #home {
   width: 100%;
-  height: 100vh;
   padding: 50px 0 50px 0;
   background-size: cover !important;
   background-position: center !important;
@@ -585,7 +588,7 @@ Home Section Styling
   background-image: url(../img/desktop/background.png); }
   #home .main-banner-text {
     font-size: 3.75rem;
-    color: #e5ac3d;
+    color: #ffffff;
     text-transform: capitalize;
     font-family: "slimsansserif"; }
     @media (max-width: 1200px) {
@@ -653,8 +656,14 @@ Home Section Styling
   #home .espn-text {
     font-size: 20px;
     color: #ffffff;
-    font-family: "slimsansserif"; }
+    font-family: "slimsansserif";
+    text-transform: uppercase;
+    letter-spacing: 1; }
   #home .espn-desc {
     font-size: 12px;
     color: #ffffff;
     font-family: "helvetic"; }
+  #home .arrow-position {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
