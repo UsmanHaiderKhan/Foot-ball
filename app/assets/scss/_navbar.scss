@@ -1,0 +1,48 @@
+/*================================= 
+		Nav Section Styling
+=================================*/
+
+nav{
+
+	.navbar-toggler {
+		border: 2px solid $light-color;
+	}
+	.active .nav-link {
+		font-size: 18px;
+		font-weight: 400;
+		color: $light-color !important;
+		font-family: $secondary-font;
+		transition: all 0.4s ease-in-out;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			left: 50%;
+			right: 0;
+			width: 48%;
+			height: 5px;
+			background-color: $light-color;
+			transform: translate(-50%, 0);
+			color: $secondary-color !important;
+		}
+	}
+	.navbar-nav .nav-link {
+		font-size: 18px;
+		color: $light-color !important;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-family: $secondary-font;
+		padding-right: 2rem !important;
+		padding-left:  2rem !important;
+		transition: all 0.5s ease;
+
+	}
+	.navbar-toggler {
+		border: 2px solid $dark-color;
+	}
+	.display-not {
+		display: none;
+	}
+	
+}
