@@ -2,8 +2,14 @@
 		Nav Section Styling
 =================================*/
 
+.color{
+	background-color: rgba($dark-color, .7) !important;
+}
 nav{
-
+	.logo-width{
+		width: 75%;
+	}
+	
 	.navbar-toggler {
 		border: 2px solid $light-color;
 	}
