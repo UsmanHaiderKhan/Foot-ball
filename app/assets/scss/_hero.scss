@@ -5,6 +5,7 @@ Home Section Styling
 #home {
 	width: 100%;
 	padding: 50px 0 50px 0;
+	position: relative;
 	background-size: cover !important;
 	background-position: center !important;
 	background-repeat: no-repeat !important;
@@ -29,8 +30,8 @@ Home Section Styling
 		padding: 20px;
 		.text-position{
 			position: absolute;
-			top: 15%;
-			left: 25%;
+			top: 20%;
+			left: 24%;
 			p{
 				font-size: 16px;
 				color: $secondary-color;
@@ -38,7 +39,7 @@ Home Section Styling
 			}
 		}
 		.hour-text{
-			font-size:24px;
+			font-size:20px;
 			color: $light-color;
 			font-family: $hel-font;
 		}
@@ -107,46 +108,14 @@ Home Section Styling
      .arrow-position{
 		 position: absolute;
 		 left: 50%;
-		 transform: translateX(-50%);
+		 bottom: 0px;
+		 transform: translate(0,-50%);
 	 }
-	// CSS Animation Slider 'AA'
-	// .owl-item.active {
-	// 	.item {
-	// 		.main-banner-text {
-	// 			animation-name: moveInUp;
-	// 			animation-duration: 2s;
-	// 			animation-delay: 0.5s;
-	// 			animation-timing-function: ease;
-	// 			animation-fill-mode: both;
-	// 			backface-visibility: hidden;
-	// 		}
-	// 		.btn-menu {
-	// 			animation-name: moveInUp;
-	// 			animation-duration: 0.5s;
-	// 			animation-delay: 2s;
-	// 			animation-timing-function: ease;
-	// 			animation-fill-mode: both;
-	// 			backface-visibility: hidden;
-	// 		}
-	// 	}
-
-	// 	// .item {
-	// 	// 	.btn-menu {
-	// 	// 		animation-duration: 2s;
-	// 	// 		animation-delay: 1s;
-	// 	// 	}
-	// 	// }
-	// }
-
-	// @keyframes moveInUp {
-	// 	0% {
-	// 		opacity: 0;
-	// 		transform: translate(0%, 100%);
-	// 	}
-
-	// 	100% {
-	// 		opacity: 1;
-	// 		transform: translate(0%, 0%);
-	// 	}
-	// }
+	
+	 .logo-position{
+		position: absolute;
+		right: 4%;
+		top: 10%;
+		width: 3.2%;
+	}
 }

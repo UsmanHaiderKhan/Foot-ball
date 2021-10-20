@@ -538,6 +538,12 @@ button:focus {
 /*================================= 
 		Nav Section Styling
 =================================*/
+.color {
+  background-color: rgba(20, 20, 20, 0.7) !important; }
+
+nav .logo-width {
+  width: 75%; }
+
 nav .navbar-toggler {
   border: 2px solid #ffffff; }
 
@@ -582,6 +588,7 @@ Home Section Styling
 #home {
   width: 100%;
   padding: 50px 0 50px 0;
+  position: relative;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -606,14 +613,14 @@ Home Section Styling
     padding: 20px; }
     #home .card-setting .text-position {
       position: absolute;
-      top: 15%;
-      left: 25%; }
+      top: 20%;
+      left: 24%; }
       #home .card-setting .text-position p {
         font-size: 16px;
         color: #e5ac3d;
         font-family: "helvetic"; }
     #home .card-setting .hour-text {
-      font-size: 24px;
+      font-size: 20px;
       color: #ffffff;
       font-family: "helvetic"; }
     #home .card-setting .card-heading {
@@ -666,4 +673,39 @@ Home Section Styling
   #home .arrow-position {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); }
+    bottom: 0px;
+    transform: translate(0, -50%); }
+  #home .logo-position {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+    width: 3.2%; }
+
+/*================================= 
+Media Queries Styling
+=================================*/
+@media only screen and (max-width: 769px) {
+  nav .active .nav-link::after {
+    width: 17%; }
+  nav .w-75 {
+    width: 5% !important; }
+  nav .logo-width {
+    width: 30%; }
+  #home .logo-position {
+    right: 1%;
+    top: 14%;
+    width: 5.2%; }
+  #home .card-setting .text-position p {
+    font-size: 14px; }
+  #home .v-text {
+    font-size: 20px; }
+  #home .card-setting .card-text {
+    font-size: 14px; }
+  #home .card-setting .card-heading {
+    font-size: 16px; }
+  #home .card-setting .hour-text {
+    font-size: 18px; }
+  #home .content-setting {
+    padding: 46px 0 0 0; } }
+
+/*==================== Media Query For Land Scape Mode =====================*/
